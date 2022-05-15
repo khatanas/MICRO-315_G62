@@ -226,6 +226,9 @@ static THD_FUNCTION(StateMachine, arg) {
 			//reset position
 			memset(&ePuck, 0, 3*sizeof(wrld_pos));
 
+			//reset broad search
+			swap = 0; orientation_set = false;
+
 			//reset PI
 			IR_target = 0; IR_max = 0; err_acc = 0;
 
