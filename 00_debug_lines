@@ -1,0 +1,11 @@
+			if (show==0){chprintf((BaseSequentialStream *)&SD3, "state=%d\n", state);}
+			if (show==1){chprintf((BaseSequentialStream *)&SD3, "IR1=%d\n", IR1);}
+			if (show==2){chprintf((BaseSequentialStream *)&SD3, "IR2=%d\n", IR2);}
+			if (show==3){chprintf((BaseSequentialStream *)&SD3, "IR3=%d\n", IR3);}
+			if (show==4){chprintf((BaseSequentialStream *)&SD3, "IR4=%d\n", IR4);}
+			if (show==5){chprintf((BaseSequentialStream *)&SD3, "IR5=%d\n", IR5);}
+			if (show==6){chprintf((BaseSequentialStream *)&SD3, "IR6=%d\n", IR6);}
+			if (show==7){chprintf((BaseSequentialStream *)&SD3, "IR7=%d\n", IR7);}
+			if (show==8){chprintf((BaseSequentialStream *)&SD3, "IR8=%d\n", IR8);}
+			
+				//chprintf((BaseSequentialStream *)&SD3, "nb line%d \n",(int)mean_line);
