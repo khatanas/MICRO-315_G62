@@ -15,7 +15,7 @@
 #define WIDTH_SLOPE 			5
 #define MIN_LINE_WIDTH 			25
 
-#define THRESHOLD_SIDE			100
+#define THRESHOLD_SIDE			25
 
 #define CAM_MEAN_COUNT 			8
 

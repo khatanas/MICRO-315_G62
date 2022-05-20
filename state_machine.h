@@ -23,9 +23,9 @@
 
 #define THRESHOLD_IR			7				// To filter out sensor noise
 #define THRESHOLD_WALL			970				// Wall detected
-#define THRESHOLD_PICTURE		40				// Picture in front of robot
+#define THRESHOLD_PICTURE		175				// Picture in front of robot
 #define THRESHOLD_ANGLE			(M_PI/4)		// Subdivision of the map into 8 zones; 8*pi/4 = 2PI
-#define THRESHOLD_OVERSHOOT		10				// To ensure max value of IR_REF found
+#define THRESHOLD_OVERSHOOT		15				// To ensure max value of IR_REF found
 
 #define CLOSE_TO_WALL			(ePuck.x>EAST_WALL || ePuck.x<WEST_WALL || ePuck.y>NORTH_WALL || ePuck.y<SOUTH_WALL)
 #define WALL_DETECTED			(LARGEST > THRESHOLD_WALL)
@@ -46,7 +46,7 @@
 #define MAX_SUM_ERROR_F			30
 
 //%%%%%%%%%%%%%%%%%%%% Detection de ligne : REACHED %%%%%%%%%%%%%%%%%%%%
-#define AVG_LINE				20				// # of required evaluation before to return guess
+#define AVG_LINE				50				// # of required evaluation before to return guess
 
 
 void stateMachine_start(void);

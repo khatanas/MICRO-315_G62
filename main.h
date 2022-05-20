@@ -36,7 +36,7 @@ typedef struct{
 #define WHEEL_DIA 				45 //[mm]
 
 //%%%%%%%%%%%%%% WORLD CHARACTERISTICS %%%%%%%%%%%%
-#define WIDTH					195 // [mm]
+#define WIDTH					175 // [mm]
 #define EAST_WALL 				WIDTH //[mm]
 #define WEST_WALL 				(-WIDTH) //[mm]
 #define NORTH_WALL 				WIDTH //[mm]

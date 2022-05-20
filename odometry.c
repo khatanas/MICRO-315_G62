@@ -32,7 +32,7 @@ static Position ePuck_thd = {0,0,0};
  */
 void updatePosition(Position* robot, dist_mm dist_r, dist_mm dist_l){
     robot->x += cos(robot->theta)*(dist_r + dist_l)/2;
-    robot->y += sin(robot->theta)*(dist_r - dist_l)/2;
+    robot->y += sin(robot->theta)*(dist_r + dist_l)/2;
     robot->theta += (dist_r - dist_l)/(2*EPUCK_RADIUS);
 }
 

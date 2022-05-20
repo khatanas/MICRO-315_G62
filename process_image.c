@@ -42,10 +42,10 @@ uint16_t compute_line_number(uint8_t *buffer){
 	uint8_t line_counter = 0;
 
 	//Computing the mean of the pixels' values
-	for(uint32_t j = 0;j<IMAGE_BUFFER_SIZE;j++){
+	for(uint32_t j = THRESHOLD_SIDE;j<IMAGE_BUFFER_SIZE-THRESHOLD_SIDE;j++){
 		mean += buffer[j];
 	}
-	mean /= IMAGE_BUFFER_SIZE;
+	mean /= (IMAGE_BUFFER_SIZE-(2*THRESHOLD_SIDE));
 
 	//Starting the line detection algorithm
 	//i = THRESHOLD_SIDE;
